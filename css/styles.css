@@ -1,0 +1,165 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+/* сторiнка */
+body{
+  font-family: Roboto;
+  background-color: #fff;
+}
+
+/* хедер */
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  padding: 25px 215px;
+  background-color: #fff;
+  border-bottom: 1px solid #ECECEC;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.header-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  color: #000;
+}
+.header-logo .logo{
+  color: #2196F3;
+}
+.header-list {
+  display: flex;
+  margin-left: 93px;
+}
+.header-item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-link {
+  color: #212121;
+}
+.header-link.active {
+  color: #2196F3;
+}
+.header-contacts{
+  display: flex;
+  align-items: center;
+}
+.header-mail {
+  color:#757575;
+  margin-right: 50px;
+}
+.header-mail:hover{
+  color: #2196F3;
+}
+.header-tel {
+  color:#757575;
+}
+.header-tel:hover{
+  color: #2196F3;
+}
+/* основний контент */
+.main {
+}
+.work-examples {
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
+}
+.filter-button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2;
+  color: #212121;
+  border: 0px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.filter-button:hover,
+.filter-button:focus{
+  color: #fff;
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.examples {
+}
+.examples-item {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+.item-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 6;
+  color: #212121;
+}
+.item-link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3;
+  color: #757575;
+}
+/* футер */
+.footer {
+  background-color: #2F303A;
+}
+.footer-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  color: #fff;
+}
+.footer-address {
+}
+.footer-location {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3;
+  color: #fff;
+}
+.footer-mail {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3;
+  color: rgba(255, 255, 255, 0.6);
+}
