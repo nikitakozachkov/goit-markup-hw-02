@@ -1,3 +1,16 @@
+/* общi cтилi */
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--primary-background-color-button: #f5f4fa;
+	--primary-color-button: #212121;
+	--accent-color-button: #fff;
+	--primary-logo-color: #2196f3;
+	--secondary-logo-color: #000;
+	--secondary-background-color: #2f303a;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -8,60 +21,62 @@ ul {
 a {
 	text-decoration: none;
 }
+button{ 
+	cursor: pointer;
+	font-family: Roboto;
+}
 
 /* сторiнка */
 body {
 	font-family: Roboto;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
 	background-color: #fff;
 }
 
 /* хедер */
 .header {
-	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: 2%;
-	background-color: #fff;
+	letter-spacing: 0.02em;
 }
 .header-nav {
-	color: #000;
 }
 .header-logo {
 	font-family: Raleway;
 	font-size: 26px;
 	font-weight: 700;
-	letter-spacing: 3%;
-	color: #000;
+	color: var(--secondary-logo-color)
 }
 .header-logo .logo {
-	color: #2196f3;
+	color: var(--primary-logo-color);
 }
 .header-list {
 }
 .header-item {
 }
 .header-link {
-	color: #212121;
+	color: var(--primary-color-button);
 }
 .header-link:hover,
 .header-link:focus {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 .header-link.active {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 .header-contacts {
 }
-.header-mail {
-	color: #757575;
+.contacts-item a{
+	color: var(--primary-text-color);
 }
-.header-mail:hover {
-	color: #2196f3;
+.contacts-item a:hover,
+.contacts-item a:focus {
+	color: var(--accent-color);
+}
+.header-mail {
 }
 .header-tel {
-	color: #757575;
-}
-.header-tel:hover {
-	color: #2196f3;
 }
 /* основний контент */
 .main {
@@ -73,19 +88,18 @@ body {
 .filter-item {
 }
 .filter-button {
-	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: 2;
-	color: #212121;
+	letter-spacing: 0.02em;
+	color: var(--primary-color-button);
 	border: 0px;
-	background-color: #f5f4fa;
+	background-color: var(--primary-background-color-button);
 	border-radius: 4px;
 	padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
-	color: #fff;
-	background-color: #2196f3;
+	color: var(--accent-color-button);
+	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 		0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
@@ -98,39 +112,37 @@ body {
 .item-title {
 	font-size: 18px;
 	font-weight: 700;
-	letter-spacing: 6;
-	color: #212121;
+	letter-spacing: 0.06em;
+	color: var(--title-text-color);
 }
-.item-link {
+.item-subtitle {
 	font-size: 16px;
-	font-weight: 400;
-	letter-spacing: 3;
-	color: #757575;
+	color: var(--primary-text-color);
 }
 
 .hero {
 	width: 100%;
 	height: 600px;
-	background-color: #2F303A;
+	background-color: var(--secondary-background-color);
 }
 .hero-title {
 	color: #fff;
 	font-size: 44px;
 	font-weight: 900;
-	letter-spacing: 6;
+	letter-spacing: 0.06em;
 	text-align: center;
 	text-transform: uppercase;
 }
 .hero-button {
 	width: 216px;
 	height: 50px;
-	background-color: #2196F3;
+	background-color: var(--accent-color);
 	border-radius: 4px;
 	border: 0px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	font-size: 16px;
 	font-weight: 700;
-	letter-spacing: 6;
+	letter-spacing: 0.06em;
 	color: #fff;
 }
 
@@ -144,17 +156,12 @@ body {
 
 }
 .benefits-title{
-	font-size: 14px;
 	font-weight: 700;
-	letter-spacing: 3%;
 	text-transform: uppercase;
-	color: #212121;
+	color: var(--title-text-color);
 }
 .benefits-subtitle{
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: 3%;
-	color: #757575;
+	color: var(--primary-text-color);
 }
 
 .about{
@@ -163,9 +170,9 @@ body {
 .about-title{
 	font-size: 36px;
 	font-weight: 700;
-	letter-spacing: 3%;
+	letter-spacing: var(--primary-letter-spacing);
 	text-align: center;
-	color: #212121;
+	color: var(--title-text-color);
 }
 .about-item{
 
@@ -177,9 +184,8 @@ body {
 .team-title{
 	font-size: 36px;
 	font-weight: 700;
-	letter-spacing: 3;
 	text-align: center;
-	color: #212121;
+	color: var(--title-text-color);
 }
 .team-list{
 
@@ -195,52 +201,44 @@ body {
 .item-title{
 	font-size: 16px;
 	font-weight: 500;
-	letter-spacing: 3;
-	text-align: center;
-	color: #212121;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
 }
 .item-subtitle{
 	font-size: 16px;
 	font-weight: 400;
-	letter-spacing: 3;
-	text-align: center;
-	color: #757575;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
 }
 
 /* футер */
 .footer {
-	background-color: #2f303a;
+	background-color: var(--secondary-background-color);
 }
 .footer-logo {
 	font-family: Raleway;
 	font-size: 26px;
 	font-weight: 700;
-	letter-spacing: 3%;
 	color: #fff;
 }
 .footer-logo .logo {
-	color: #2196f3;
+	color: var(--primary-logo-color);
 }
 .footer-address {
 }
-.footer-location {
-	font-size: 14px;
+.footer-address a{
 	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 3;
+}
+.footer-address a:hover,
+.footer-address a:focus{
+	color: var(--accent-color);
+}
+.footer-location {
 	color: #fff;
 }
 .footer-mail {
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 3;
 	color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 3;
 	color: rgba(255, 255, 255, 0.6);
 }
