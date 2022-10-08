@@ -23,7 +23,7 @@ a {
 }
 button{ 
 	cursor: pointer;
-	font-family: Roboto;
+	font-family: inherit;
 }
 
 /* сторiнка */
@@ -206,7 +206,6 @@ body {
 }
 .item-subtitle{
 	font-size: 16px;
-	font-weight: 400;
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 }
